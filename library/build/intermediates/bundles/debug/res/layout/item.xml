@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<!-- 	<Button 
+	  android:id="@+id/button"  
+	  android:layout_width="80dip"
+	  android:layout_height="wrap_content"
+	  /> -->
+	  <TextView 
+	      android:id="@+id/text_view"
+	      android:layout_width="80dip"
+	      android:layout_height="50dip"
+	      />
+</LinearLayout><!-- From: file:/E:/svn_2016/Android/PiGai_v1.6(version1.6)%20_bug_fix/library/res/layout/item.xml -->

@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索作文号或老师名字并开始答题"
+        android:textColor="#999999"
+        android:textSize="@dimen/article_list_item_title_size" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/articleId"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_input_edittext"
+            android:singleLine="true"
+            android:textSize="@dimen/article_list_item_title_size" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/actionbar_color"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/article_list_item_title_size" />
+    </LinearLayout>
+
+    <com.ns.developer.tagview.widget.TagCloudLinkView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/teacherNameTagView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="#ffffff"
+        app:isDeletable="false"
+        app:tagLayoutColor="@color/wordcount_color"
+        app:tagTextSize="8sp"
+        app:tagTextColor="#ffffff"
+        app:deletableTextSize="8sp"
+        app:deletableTextColor="#ff9acd32"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/noneArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="没有找到相应的文章或老师"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <include layout="@layout/student_article_search_listview_in_student" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

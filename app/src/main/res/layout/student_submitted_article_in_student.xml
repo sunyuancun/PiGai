@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/article_list_item_margin"
+    android:paddingLeft="@dimen/article_list_item_margin"
+    android:paddingRight="@dimen/article_list_item_margin"
+    android:paddingTop="@dimen/article_list_item_margin">
+
+    <FrameLayout
+        android:id="@+id/scoredFrame"
+        android:layout_width="@dimen/draft_icon_size"
+        android:layout_height="@dimen/draft_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/article_list_item_margin">
+
+        <ImageView
+            android:id="@+id/scored"
+            android:layout_width="@dimen/draft_icon_size"
+            android:layout_height="@dimen/draft_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/scored" />
+
+        <TextView
+            android:id="@+id/submitted"
+            android:layout_width="@dimen/draft_icon_size"
+            android:layout_height="@dimen/draft_icon_size"
+            android:gravity="center"
+            android:text="NU"
+            android:textColor="#5db62f"
+            android:textSize="30sp" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="177.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/scoredFrame"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/scoredFrame"
+        android:singleLine="true"
+        android:text="articleTitle"
+        android:textColor="@color/year"
+        android:textSize="@dimen/article_list_item_title_size" />
+
+
+    <TextView
+        android:id="@+id/submit_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/articleTitle"
+        android:textColor="#999999"
+        android:textSize="@dimen/article_list_item_content_size" />
+
+
+    <TextView
+        android:id="@+id/articleCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scoredFrame"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/scoredFrame"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="@dimen/article_list_item_content_size" />
+
+    <TextView
+        android:id="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scoredFrame"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/articleCategory"
+        android:text="截止"
+        android:textColor="#999999"
+        android:textSize="@dimen/article_list_item_content_size" />
+
+    <TextView
+        android:id="@+id/student_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scoredFrame"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:textColor="#feaa00"
+        android:textSize="@dimen/article_list_item_content_size" />
+
+
+</RelativeLayout>

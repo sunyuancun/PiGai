@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/background_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/student_home_ui_background_white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <!-- title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@color/teacher_article_list_title_color"
+            android:textSize="@dimen/teacher_article_list_title_size" />
+
+        <!-- article number -->
+        <TextView
+            android:id="@+id/articlenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/year"
+            android:textSize="@dimen/teacher_article_list_data_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/articlenumber"
+            android:layout_marginTop="3dp">
+
+            <!-- article end time -->
+            <TextView
+                android:id="@+id/articletime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/student_home_ui_background_blue"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/teacher_article_list_data_size" />
+
+            <TextView
+                android:id="@+id/articletype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/articletime"
+                android:background="@drawable/student_home_ui_background_blue"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/teacher_article_list_data_size" />
+
+            <TextView
+                android:id="@+id/yiyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/submittedNumber"
+                android:singleLine="true"
+                android:text="已有"
+                android:textColor="@color/year"
+                android:textSize="@dimen/teacher_article_list_data_size" />
+
+
+            <!-- Submitted article number -->
+            <TextView
+                android:id="@+id/submittedNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/dati"
+                android:singleLine="true"
+                android:textColor="@color/actionbar_color"
+                android:textSize="@dimen/teacher_article_list_data_size" />
+
+            <TextView
+                android:id="@+id/dati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="答题"
+                android:textColor="@color/year"
+                android:textSize="@dimen/teacher_article_list_data_size" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/articlecreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/background_line"
+        android:layout_below="@+id/background_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/year"
+        android:textSize="@dimen/teacher_article_list_data_size" />
+
+</RelativeLayout>

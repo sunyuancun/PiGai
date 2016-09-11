@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cikuu.pigai.activity.teacher.StudentArticleListInTeacherArticleActivity">
+
+    <item
+        android:id="@+id/action_fenxi"
+        android:orderInCategory="100"
+        android:title="@string/fenxi"
+        app:showAsAction="always" />
+
+</menu>

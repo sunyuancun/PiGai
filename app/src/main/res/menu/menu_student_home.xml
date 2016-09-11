@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cikuu.pigai.activity.student.StudentHomeActivity">
+    <!--<item-->
+    <!--android:id="@+id/search_articlenumber"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="搜索作文号"-->
+    <!--android:icon="@drawable/search"-->
+    <!--app:showAsAction="always" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/self_estimate"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="自测"-->
+    <!--app:showAsAction="always" />-->
+</menu>

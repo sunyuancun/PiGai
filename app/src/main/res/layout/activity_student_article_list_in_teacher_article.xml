@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.cikuu.pigai.activity.teacher.StudentArticleListInTeacherArticleActivity">
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/teacher_article_title_margin_top_in_teacher"
+        android:gravity="center"
+        android:text="subject title"
+        android:textColor="@color/teacher_article_title_color_in_teacher"
+        android:textSize="@dimen/teacher_article_title_size_in_teacher" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/articleTitle"
+        android:layout_marginBottom="@dimen/teacher_article_data_margin_bottom_in_teacher"
+        android:gravity="center"
+        android:text="作文号: 102304 10小时分后截止 20人答题"
+        android:textColor="@color/teacher_article_data_color_in_teacher"
+        android:textSize="@dimen/teacher_article_data_size_in_teacher" />
+
+    <!-- <RelativeLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/detail"
+         android:background="@drawable/article_body_shape"
+         android:layout_marginBottom="5dp" >
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/btnArticleList"
+             android:layout_toLeftOf="@+id/centerView"
+             android:background="@drawable/btn_myarticle_focused"/>
+         <View
+             android:id="@+id/centerView"
+             android:layout_height="1dp"
+             android:layout_width="0dp"
+             android:layout_centerHorizontal="true" />
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/btnRequirement"
+             android:layout_toRightOf="@+id/centerView"
+             android:background="@drawable/btn_aboutarticle_default" />
+     </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/article_body_shape"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnArticleList"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_myarticle_focused1" />
+
+        <Button
+            android:id="@+id/btnRequirement"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_aboutarticle_default1" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/linearLayout1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/requrementImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/frameLayout1">
+
+        <ListView
+            android:id="@+id/studentArticleList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/teacher_article_list_row_selector"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/remindTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ScrollView
+            android:id="@+id/requirementTextViewInScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/requirementTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is just a sample" />
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

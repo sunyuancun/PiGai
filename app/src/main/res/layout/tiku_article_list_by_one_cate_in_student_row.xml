@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/teacher_article_list_row_selector"
+    android:padding="7.5dp">
+
+    <!-- Submitted article number -->
+    <TextView
+        android:id="@+id/dati"
+        android:layout_width="@dimen/draft_icon_size"
+        android:layout_height="@dimen/draft_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/teacher_article_list_item_margin"
+        android:background="@drawable/scored"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="答题"
+        android:textColor="#5b5b5b" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dati"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/dati"
+        android:singleLine="true"
+        android:text="title_name"
+        android:textColor="#5b5b5b" />
+
+
+    <TextView
+        android:id="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dati"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/dati"
+        android:text="endtime"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/submittedNumberPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/person"
+        android:text="0"
+        android:textColor="#feaa00" />
+
+
+    <TextView
+        android:id="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:text="人提交"
+        android:textColor="#999999" />
+
+</RelativeLayout>

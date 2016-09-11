@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/satoyama.namito/git/TagCloudLinkView/lib/src/main/res/values/attr.xml -->
+    <eat-comment />
+
+    <declare-styleable name="TagCloudLinkView">
+        <attr name="tagLayoutColor" format="color" />
+        <attr name="tagTextColor" format="color" />
+        <attr name="tagTextSize" format="dimension" />
+        <attr name="isDeletable" format="boolean" />
+        <attr name="deletableTextColor" format="color" />
+        <attr name="deletableTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

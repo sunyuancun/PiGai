@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/commentsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@color/list_divider"
+        android:dividerHeight="0dp" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/input_view"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:padding="@dimen/activity_horizontal_margin"-->
+        <!--android:background="@color/studnet_comment_in_teacher">-->
+
+        <!--<FrameLayout-->
+            <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="40dp">-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:id="@+id/btnText"-->
+                <!--android:visibility="visible"-->
+                <!--android:background="@drawable/button_text_comment" />-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:id="@+id/btnVoice"-->
+                <!--android:visibility="invisible"-->
+                <!--android:background="@drawable/button_voice_comment" />-->
+        <!--</FrameLayout>-->
+
+        <!--<FrameLayout-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:id="@+id/btnInputVoice"-->
+                <!--android:visibility="visible"-->
+                <!--android:background="@drawable/button_voice_comment_default" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editTextInputText"-->
+                    <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:visibility="invisible"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:textSize="@dimen/commentSize"-->
+                    <!--android:background="@drawable/login_input_edittext" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btnSendTextComment"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:visibility="invisible"-->
+                    <!--android:background="@drawable/button_send" />-->
+
+            <!--</LinearLayout>-->
+
+        <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

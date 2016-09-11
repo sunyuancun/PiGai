@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_color">#3ab3ff</color>
+    <color name="unselected_actionbar_color">#66000000</color>
+    <color name="wordcount_color">#aa3ab3ff</color>
+
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#33d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="red">#ff0000</color>
+    <color name="gray_content">#5b5b5b</color>
+    <color name="button_own">#feaa00</color>
+
+    <color name="home_pager_bottom_background">#f9f9f9</color>
+
+    <color name="home_student_background_color">#ebf1f7</color>
+    <color name="submittedNumber">#e2e2e2</color>
+
+    <color name="gray_viewpager">#00000000</color>
+    <color name="teacher_article_list_title_color">#5b5b5b</color>
+    <color name="teacher_article_title_color_in_teacher">#5b5b5b</color>
+    <color name="teacher_article_data_color_in_teacher">#999999</color>
+    <color name="studnet_name_in_teacher">#5b5b5b</color>
+    <color name="studnet_data_in_teacher">#5b5b5b</color>
+    <color name="studnet_content_in_teacher">#999999</color>
+    <color name="studnet_comment_in_teacher">#44d9d9d9</color>
+
+    <color name="student_color_in_teacher">#5b5b5b</color>
+    <color name="student_data_color_in_teacher">#999999</color>
+    <color name="student_article_comment_in_teacher">#e5f5fd</color>
+
+    <color name="student_article_title_hint">#999999</color>
+
+    <color name="student_article_content_in_teacher">#d9d9d9</color>
+    <color name="article_times_words_fullscore">#999999</color>
+
+    <color name="main_background">#ebf1f7</color>
+    <color name="main_background2">#F3F3F3</color>
+
+    <!-- dialog  NoSubmitArticleDialog   start -->
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bbutton_danger">#ffd9534f</color>
+    <color name="bbutton_danger_edge">#ffd43f3a</color>
+    <color name="bbutton_danger_pressed">#ffd2322d</color>
+    <color name="bbutton_danger_pressed_edge">#ffac2925</color>
+    <color name="bbutton_danger_disabled">#a5d9534f</color>
+    <color name="bbutton_danger_disabled_edge">#a5d43f3a</color>
+
+    <color name="bbutton_info">#ff5bc0de</color>
+    <color name="bbutton_info_edge">#ff46b8da</color>
+    <color name="bbutton_info_pressed">#ff39b3d7</color>
+    <color name="bbutton_info_pressed_edge">#ff269abc</color>
+    <color name="bbutton_info_disabled">#a55bc0de</color>
+    <color name="bbutton_info_disabled_edge">#a546b8da</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <!-- dialog  NoSubmitArticleDialog   end -->
+
+    <color name="fresh_red">#ffd9534f</color>
+    <color name="fresh_white">#ebf1f7</color>
+    <color name="fresh_blue">#ff39b3d7</color>
+</resources>

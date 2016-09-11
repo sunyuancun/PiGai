@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cikuu.pigai.activity.teacher.TeacherArticleHomeActivity">
+    <item
+        android:id="@+id/publish_article"
+        android:orderInCategory="100"
+        android:title="搜索作文号"
+        android:icon="@drawable/btn_modify_article"
+        app:showAsAction="always" />
+</menu>

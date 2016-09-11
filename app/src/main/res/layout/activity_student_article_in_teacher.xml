@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="1.0"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/student_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/student_photo_margin_in_teacher"
+                android:layout_marginBottom="@dimen/student_photo_margin_in_teacher"
+                android:layout_marginRight="@dimen/student_photo_margin_in_teacher"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/articleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/student_image"
+                android:layout_toRightOf="@id/student_image"
+                android:layout_marginTop="@dimen/student_info_margin_top_in_teacher"
+                android:layout_marginRight="@dimen/student_article_margin_right_in_teacher"
+                android:textColor="@color/student_color_in_teacher"
+                android:textSize="@dimen/student_size_in_teacher"
+                android:text="张平" />
+
+            <TextView
+                android:id="@+id/classname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/articleTitle"
+                android:layout_toRightOf="@id/articleTitle"
+                android:layout_marginRight="@dimen/student_article_margin_right_in_teacher"
+                android:textColor="@color/student_color_in_teacher"
+                android:textSize="@dimen/student_size_in_teacher"
+                android:text="三年级二班" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/student_image"
+                android:layout_toRightOf="@id/student_image"
+                android:layout_marginBottom="@dimen/student_info_margin_top_in_teacher"
+                android:textColor="@color/student_data_color_in_teacher"
+                android:textSize="@dimen/student_size_in_teacher"
+                android:text="2014-05-01" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="52.5dp"
+                android:layout_height="52.5dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/student_image"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@drawable/article_body_shape">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f9f9f9"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/student_article_title_margin_top_in_teacher"
+                        android:textSize="@dimen/student_article_title_size_in_teacher"
+                        android:text="作文题目" />
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/student_article_content_margin_top_in_teacher"
+                        android:textSize="@dimen/student_article_content_size_in_teacher"
+                        android:text="文章" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/timeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/article_times_words_fullscore"
+                            android:textSize="@dimen/student_article_size_in_teacher"
+                            android:text="次数:" />
+
+                        <TextView
+                            android:id="@+id/times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/student_article_margin_right_in_teacher"
+                            android:textColor="@color/article_times_words_fullscore"
+                            android:textSize="@dimen/student_article_size_in_teacher"
+                            android:text="1" />
+
+                        <TextView
+                            android:id="@+id/textview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/article_times_words_fullscore"
+                            android:textSize="@dimen/student_article_size_in_teacher"
+                            android:text="字数:" />
+
+                        <TextView
+                            android:id="@+id/count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/student_article_margin_right_in_teacher"
+                            android:textColor="@color/article_times_words_fullscore"
+                            android:textSize="@dimen/student_article_size_in_teacher"
+                            android:text="105" />
+
+                        <TextView
+                            android:id="@+id/textview3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/article_times_words_fullscore"
+                            android:textSize="@dimen/student_article_size_in_teacher"
+                            android:text="满分:" />
+
+                        <TextView
+                            android:id="@+id/fullscore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/article_times_words_fullscore"
+                            android:textSize="@dimen/student_article_size_in_teacher"
+                            android:text="100" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/student_article_comment_margin_top_in_teacher"
+                        android:background="@color/student_article_comment_in_teacher"
+                        android:text="生成的评语" />
+
+                    <ListView
+                        android:id="@+id/commentsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:divider="@color/list_divider"
+                        android:dividerHeight="0dp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/input_view"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@color/studnet_comment_in_teacher">
+
+        <FrameLayout
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="30dp"
+            android:layout_height="40dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/btnText"
+                android:visibility="visible"
+                android:background="@drawable/button_text_comment" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/btnVoice"
+                android:visibility="invisible"
+                android:background="@drawable/button_voice_comment" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/btnInputVoice"
+                android:visibility="visible"
+                android:background="@drawable/button_voice_comment_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextInputText"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/commentSize"
+                    android:background="@drawable/login_input_edittext" />
+
+                <Button
+                    android:id="@+id/btnSendTextComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/button_send" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PiGai_v1.9.iml" filepath="$PROJECT_DIR$/PiGai_v1.9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_convenientbanner/library_convenientbanner.iml" filepath="$PROJECT_DIR$/library_convenientbanner/library_convenientbanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_ios_dialog/library_ios_dialog.iml" filepath="$PROJECT_DIR$/library_ios_dialog/library_ios_dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_xrecyclerview/library_xrecyclerview.iml" filepath="$PROJECT_DIR$/library_xrecyclerview/library_xrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

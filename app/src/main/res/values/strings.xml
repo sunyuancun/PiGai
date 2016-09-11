@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">批改网</string>
+    <string name="app_xunfei_id">=56f8d22b</string>
+
+    <string name="hello_world">The Splash Screen will disappear in 3 seconds!</string>
+    <string name="guide">The guide!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_regist">注册</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_student_article_list_in_teacher_article">StudentArticleListInTeacherArticleActivity</string>
+    <string name="title_activity_student_article_in_teacher">StudentArticleInTeacherActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_teacher_article_home">TeacherArticleHomeActivity</string>
+    <string name="title_activity_search_home">SearchHomeActivity</string>
+    <string name="title_activity_student_article_requirement">StudentArticleRequirementActivity</string>
+    <string name="title_activity_student_article_in_student">StudentArticleInStudentActivity</string>
+    <string name="title_activity_student_my_article">StudentMyArticleActivity</string>
+    <string name="title_activity_student_about_article">StudentAboutArticleActivity</string>
+    <string name="school_title_name">作文群讨论</string>
+    <string name="back">返回</string>
+    <string name="send">发送</string>
+    <string name="title_activity_student_article_submitted">StudentArticleSubmittedActivity</string>
+    <string name="title_activity_student_article_un_submitted">StudentArticleUnSubmittedActivity</string>
+    <string name="title_activity_student_article_home_view_pager">StudentArticleHomeViewPager</string>
+    <string name="title_activity_comments_by_sentence">CommentsBySentenceActivity</string>
+    <string name="title_activity_search_school">SearchSchoolActivity</string>
+    <string name="title_activity_teacher_publish_new_article">TeacherPublishNewArticleActivity</string>
+    <string name="title_activity_student_home">作文首页</string>
+    <string name="title_activity_teacher_home">作文首页</string>
+    <string name="title_activity_student_information">学生信息</string>
+    <string name="title_activity_student_back_info">意见反馈</string>
+    <string name="title_activity_teacher_information">教师信息</string>
+    <string name="title_activity_teacher_back_info">意见反馈</string>
+    <string name="title_activity_teacher_register">老师注册</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_student_register">学生注册</string>
+    <string name="title_activity_teacher_information_html5">教师信息</string>
+    <string name="title_activity_student_information_html5">学生信息</string>
+    <string name="title_activity_practice_article">PracticeArticleActivity</string>
+    <string name="title_activity_searcher_teacher">SearcherTeacherActivity</string>
+    <string name="title_activity_teacher_article_list_in_student">
+        TeacherArticleListInStudentActivity
+    </string>
+    <string name="title_activity_about_app">AboutAppActivity</string>
+    <string name="title_activity_student_article_submitted2">StudentArticleSubmitted2Activity
+    </string>
+    <string name="title_activity_find_password">找回密码</string>
+    <string name="title_activity_find_password_by_email">找回密码</string>
+    <string name="title_activity_user_register">用户注册</string>
+    <string name="title_activity_reset_password_by_old_password">
+        修改密码
+    </string>
+    <string name="title_activity_choose_class">选择班级</string>
+    <string name="title_activity_send_feedback">反馈</string>
+
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="article_summary_in_taacher">作文分析</string>
+    <string name="login_out">退出</string>
+    <string name="fenxi">分析</string>
+    <string name="submittime">提交时间：</string>
+    <string name="savetime">保存时间：</string>
+    <string name="liu_lan_zuo_wen">浏览作文</string>
+    <string name="guan_yu_wo">关于我</string>
+    <string name="tiku_article">题库作文</string>
+    <string name="text_begin">开始录制</string>
+
+</resources>

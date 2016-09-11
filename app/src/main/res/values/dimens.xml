@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">15dp</dimen>
+
+    <dimen name="submitted">30sp</dimen>
+    <dimen name="title">20sp</dimen>
+    <dimen name="number">15sp</dimen>
+    <dimen name="genre">15sp</dimen>
+    <dimen name="year">15sp</dimen>
+
+    <dimen name="home_pager_bottom_heigh">48dp</dimen>
+
+    <dimen name="draft_icon_size">52.5dp</dimen>
+    <dimen name="article_list_item_margin">7.5dp</dimen>
+    <dimen name="article_list_item_title_size">16sp</dimen>
+    <dimen name="article_list_item_content_size">14sp</dimen>
+
+    <dimen name="my_article_title">18sp</dimen>
+    <dimen name="my_article_content">16sp</dimen>
+    <dimen name="commentSize">24sp</dimen>
+
+
+    <dimen name="teacher_article_list_item_margin">7.5dp</dimen>
+    <dimen name="teacher_article_list_title_size">16sp</dimen>
+    <dimen name="teacher_article_list_data_size">14sp</dimen>
+
+    <dimen name="teacher_article_title_margin_top_in_teacher">15dp</dimen>
+    <dimen name="teacher_article_title_size_in_teacher">16sp</dimen>
+    <dimen name="teacher_article_data_margin_bottom_in_teacher">10dp</dimen>
+    <dimen name="teacher_article_data_size_in_teacher">14sp</dimen>
+    <dimen name="student_article_list_in_teacher_score_margin_right">12.5dp</dimen>
+
+    <dimen name="student_article_score_in_teacher">25sp</dimen>
+    <dimen name="student_name_in_teacher">16sp</dimen>
+    <dimen name="student_content_in_teacher">14sp</dimen>
+    <dimen name="student_title_margin_name_in_teacher">8dp</dimen>
+
+    <dimen name="student_size_in_teacher">14sp</dimen>
+    <dimen name="student_article_size_in_teacher">14sp</dimen>
+
+    <dimen name="student_photo_margin_in_teacher">10dp</dimen>
+    <dimen name="student_info_margin_top_in_teacher">7.5dp</dimen>
+    <dimen name="student_article_margin_right_in_teacher">10dp</dimen>
+    <dimen name="student_article_title_margin_top_in_teacher">12.5dp</dimen>
+    <dimen name="student_article_title_size_in_teacher">20sp</dimen>
+    <dimen name="student_article_content_size_in_teacher">16sp</dimen>
+    <dimen name="student_article_content_margin_top_in_teacher">10dp</dimen>
+    <dimen name="student_article_comment_margin_top_in_teacher">12.5dp</dimen>
+
+    <dimen name="student_article_title_height">40dp</dimen>
+    <dimen name="student_article_title_content_margin">5dp</dimen>
+    <dimen name="my_article_content_in_studentWrite">16sp</dimen>
+
+
+    <!-- NoSubmitArticleDialog start -->
+    <dimen name="bbuton_rounded_corner_radius">5dp</dimen>
+    <!-- NoSubmitArticleDialog end -->
+    <dimen name="item_space">5dp</dimen>
+</resources>

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.cikuu.pigai"
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 19
+        versionName "1.9"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/volley.jar')
+    compile files('libs/httpmime-4.2.6.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/umeng-analytics-v5.4.2.jar')
+    compile files('libs/Msc.jar')
+    compile 'com.ns-developer:tagcloudview:0.1.0'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile project(':library_xrecyclerview')
+    compile project(':library_ios_dialog')
+    compile project(':library_convenientbanner')
+
+}

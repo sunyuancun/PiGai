@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:background="#3ab3ff"/>
+
+  <TextView
+      android:background="#ffffff"
+      android:gravity="center"
+      android:id="@+id/title"
+      android:text="请完善个人稀料"
+      android:textSize="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="100dp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:orientation="horizontal"
+      android:background="#feaa00"
+      >
+   <Button
+       android:id="@+id/bt_dialog_ok"
+       android:text="确定"
+      android:background="#feaa00"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+   </LinearLayout>
+
+
+</LinearLayout>

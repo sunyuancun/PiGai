@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cikuu.pigai">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="登录"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="login.com"
+                    android:scheme="pigai" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:label="@string/title_activity_guide"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teacher.StudentArticleListInTeacherArticleActivity"
+            android:label="学生作文列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teacher.StudentArticleInTeacherActivity"
+            android:label="学生作文"
+            android:parentActivityName=".activity.teacher.StudentArticleListInTeacherArticleActivity"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.teacher.StudentArticleListInTeacherArticleActivity" />
+        </activity>
+        <activity
+            android:name=".activity.teacher.TeacherPublishNewArticleActivity"
+            android:label="布置作文"
+            android:screenOrientation="portrait" />
+
+        <!-- activities in student client -->
+        <activity
+            android:name=".activity.student.StudentSearchActivity"
+            android:label="搜索作文"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.StudentArticleStartWritingActivity"
+            android:label="作文要求"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.student.StudentSearchActivity" />
+        </activity>
+        <activity
+            android:name=".activity.student.StudentArticleSubmittedActivity"
+            android:label="作文内容"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.StudentArticleUnSubmittedActivity"
+            android:label="草稿"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.CommentsBySentenceActivity"
+            android:label="按句点评"
+            android:parentActivityName=".activity.student.StudentArticleSubmittedActivity"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.student.StudentArticleSubmittedActivity" />
+        </activity>
+        <activity
+            android:name=".activity.BigUserPhotoActivity"
+            android:label="原始照片"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.StudentHomeActivity"
+            android:label="浏览作文"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teacher.TeacherHomeActivity"
+            android:label="浏览作文"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchSchoolActivity"
+            android:label="学校列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.StudentInformationActivity"
+            android:label="@string/title_activity_student_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teacher.TeacherInformationActivity"
+            android:label="@string/title_activity_teacher_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".activity.teacher.TeacherRegisterActivity"
+            android:label="@string/title_activity_teacher_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.StudentRegisterActivity"
+            android:label="@string/title_activity_student_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teacher.TeacherInformationHtml5Activity"
+            android:label="@string/title_activity_teacher_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.StudentInformationHtml5Activity"
+            android:label="@string/title_activity_student_information_html5"
+            android:screenOrientation="portrait" />
+        <!-- 友盟start -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5513d425fd98c5c44f000272" />
+        <!-- 推广渠道 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Wandoujia" />
+        <!-- 友盟end -->
+
+        <activity
+            android:name=".activity.student.SearcherTeacherActivity"
+            android:label="@string/title_activity_searcher_teacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.TeacherArticleListInStudentActivity"
+            android:label="@string/title_activity_teacher_article_list_in_student"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutAppActivity"
+            android:label="@string/title_activity_about_app"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.student.StudentArticleSubmitted2Activity"
+            android:label="@string/title_activity_student_article_submitted2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teacher.ArticleRequirementInTeacherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindPasswordActivity"
+            android:label="@string/title_activity_find_password" />
+        <activity
+            android:name=".activity.FindPasswordByEmailActivity"
+            android:label="@string/title_activity_find_password_by_email" />
+        <activity
+            android:name=".activity.UserRegisterActivity"
+            android:label="@string/title_activity_user_register" />
+        <activity
+            android:name=".activity.ResetPasswordByOldPasswordActivity"
+            android:label="@string/title_activity_reset_password_by_old_password" />
+        <activity
+            android:name=".activity.student.ChooseClassActivity"
+            android:label="@string/title_activity_choose_class" />
+        <activity
+            android:name=".activity.SendFeedbackActivity"
+            android:label="@string/title_activity_send_feedback" />
+        <activity
+            android:name=".activity.teacher.StudentArticleSummaryInTeacherActivity"
+            android:label="@string/article_summary_in_taacher" />
+        <activity android:name=".activity.student.StudentTiKuActivity"></activity>
+        <activity android:name=".activity.student.HuoDongActivity"></activity>
+    </application>
+
+</manifest>
